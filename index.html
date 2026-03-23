@@ -3,67 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hue Rings - Master the Spectrum</title>
+    <title>Hue Rings - Support & Privacy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: white; margin: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: white; scroll-behavior: smooth; }
         .gradient-text { background: linear-gradient(to right, #00f2ff, #ff007f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="selection:bg-[#00f2ff] selection:text-slate-900">
+<body class="p-6">
 
-    <!-- Navigation -->
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00f2ff] to-[#ff007f] flex items-center justify-center font-black text-xl">H</div>
-            <span class="font-black tracking-tighter text-2xl uppercase">Hue Rings</span>
-        </div>
-        <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-slate-400">
-            <a href="#features" class="hover:text-white transition-colors">Features</a>
-            <a href="#support" class="hover:text-white transition-colors">Support</a>
-            <a href="#privacy" class="hover:text-white transition-colors">Privacy</a>
-        </div>
+    <!-- Simple Navigation (Visible on all devices) -->
+    <nav class="flex flex-wrap justify-center gap-6 mb-20 text-xs font-bold uppercase tracking-widest text-slate-400">
+        <a href="#support" class="hover:text-[#00f2ff] transition-colors border-b border-white/10 pb-1">Support</a>
+        <a href="#privacy" class="hover:text-[#ff007f] transition-colors border-b border-white/10 pb-1">Privacy Policy</a>
+        <a href="#marketing" class="hover:text-white transition-colors border-b border-white/10 pb-1">About App</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="px-6 py-20 flex flex-col items-center text-center max-w-4xl mx-auto">
-        <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-none">
-            Master the <span class="gradient-text">Spectrum</span>
-        </h1>
-        <p class="text-xl text-slate-400 mb-10 max-w-2xl leading-relaxed">
-            A vibrant, addictive color-matching puzzle. Stack, match, and clear your way to the top of the global leaderboards.
-        </p>
-        <div class="bg-white text-black px-8 py-4 rounded-full font-black text-lg shadow-xl">
-            COMING SOON TO APP STORE
+    <!-- Marketing Section -->
+    <section id="marketing" class="max-w-2xl mx-auto text-center mb-32">
+        <h1 class="text-5xl font-black mb-4 tracking-tighter uppercase">Hue <span class="gradient-text">Rings</span></h1>
+        <p class="text-slate-400 leading-relaxed">The ultimate color-matching puzzle. Stack, match, and clear vibrant rings to climb the global leaderboards.</p>
+    </section>
+
+    <!-- Support Section (This is your Support URL) -->
+    <section id="support" class="max-w-2xl mx-auto mb-32 p-8 rounded-3xl bg-white/5 border border-white/10">
+        <h2 class="text-3xl font-black mb-4 uppercase tracking-tight text-[#00f2ff]">Support & Contact</h2>
+        <p class="text-slate-300 mb-6">Need help with Hue Rings? Have a bug to report or a feature request? Contact us directly via email:</p>
+        <a href="mailto:leftyxan@gmail.com" class="text-xl font-bold text-white underline hover:text-[#00f2ff]">leftyxan@gmail.com</a>
+    </section>
+
+    <!-- Privacy Policy Section (This is your Privacy URL) -->
+    <section id="privacy" class="max-w-2xl mx-auto mb-20">
+        <h2 class="text-3xl font-black mb-6 uppercase tracking-tight text-[#ff007f]">Privacy Policy</h2>
+        <div class="text-slate-400 space-y-4 text-sm leading-relaxed">
+            <p><strong>Last Updated: March 23, 2026</strong></p>
+            <p>Hue Rings respects your privacy. We collect minimal data to provide a great experience:</p>
+            <ul class="list-disc pl-5 space-y-2">
+                <li><strong>Authentication:</strong> We use Firebase/Apple/Google login to sync your scores.</li>
+                <li><strong>Ads:</strong> We use Google AdMob for personalized advertisements.</li>
+                <li><strong>Data Deletion:</strong> You can delete your account and all data permanently within the app settings (compliant with Apple Guideline 5.1.1).</li>
+            </ul>
+            <p>For any privacy concerns, contact us at <strong>leftyxan@gmail.com</strong>.</p>
         </div>
     </section>
 
-    <!-- Support Section -->
-    <section id="support" class="px-6 py-20 max-w-4xl mx-auto text-center border-t border-white/5">
-        <h2 class="text-4xl font-black mb-6 uppercase tracking-tight">Support</h2>
-        <p class="text-slate-400 mb-8 text-lg">
-            Having trouble? Reach out to our support team:
-        </p>
-        <a href="mailto:leftyxan@gmail.com" class="inline-block bg-[#00f2ff] text-slate-900 px-10 py-4 rounded-full font-black text-lg transition-all">
-            EMAIL SUPPORT
-        </a>
-    </section>
-
-    <!-- Privacy Policy Section -->
-    <section id="privacy" class="px-6 py-20 bg-slate-900/80">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl font-black mb-10 uppercase tracking-tight text-center">Privacy Policy</h2>
-            <div class="text-slate-400 space-y-6 text-sm">
-                <p><strong>Last Updated: March 23, 2026</strong></p>
-                <p>Hue Rings ("we," "our," or "us") is committed to protecting your privacy. We use Firebase Authentication to sync scores and AdMob to serve ads. You can delete your account and data at any time within the app settings.</p>
-                <p>Contact: <strong>leftyxan@gmail.com</strong></p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="p-10 text-center text-slate-500 text-xs border-t border-white/5">
-        <p>&copy; 2026 Hue Rings. All rights reserved.</p>
+    <footer class="text-center text-slate-600 text-[10px] uppercase tracking-[0.3em] mt-20">
+        &copy; 2026 Hue Rings
     </footer>
 
 </body>
